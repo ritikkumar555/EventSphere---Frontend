@@ -15,7 +15,7 @@ function App() {
       <div className="flex-1">
         <Routes>
           <Route path="/" element={<HomePage/>} />
-          <Route path="*" element={<NotFound />} />
+          <Route path="*" element={<NotFound/>} />
         </Routes>
       </div>
       
