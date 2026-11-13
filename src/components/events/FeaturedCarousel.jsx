@@ -2,7 +2,7 @@ import React, { useCallback, useEffect, useState } from "react";
 import useEmblaCarousel from "embla-carousel-react";
 
 import Autoplay from "embla-carousel-autoplay";
-import { Button } from "./ui/button";
+import { Button } from "../ui/button";
 import {
   ArrowRight,
   Calendar,
@@ -12,7 +12,7 @@ import {
   Sparkles,
 } from "lucide-react";
 import { Link } from "react-router";
-import { Badge } from "./ui/badge";
+import { Badge } from "../ui/badge";
 import { formatEventDate, formatPrice } from "@/lib/utils";
 
 
