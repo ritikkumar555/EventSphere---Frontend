@@ -3,6 +3,7 @@ import axios from "axios";
 import { Bookmark, Calendar, Check, Clock, MapPin, Share2, Shield, ShieldCheck, Sparkle, Sparkles, Users } from "lucide-react";
 import { useEffect, useState } from "react";
 import { Link, useParams } from "react-router";
+import { toast } from "sonner";
 
 const Modes = {
   "in-person": "In-Person Gathering",
@@ -39,6 +40,7 @@ export default function EventDetailsPage() {
 
   function handleShare(){
     navigator.clipboard.writeText(window.location.href);
+    toast.success("Event link copied to clipboard!");
   }
 
   if (isLoading) {
